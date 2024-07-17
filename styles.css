@@ -1,0 +1,44 @@
+:root {
+
+    --clr-primary-red: hsl(14, 86%, 42%);
+    --clr-primary-green: hsl(159, 69%, 38%);
+
+    --clr-neutral-200: hsl(20, 50%, 98%);
+    --clr-neutral-300: hsl(13, 31%, 94%);
+    --clr-neutral-400: hsl(14, 25%, 72%);
+    --clr-neutral-500: hsl(7, 20%, 60%);
+    --clr-neutral-600: hsl(12, 20%, 44%);
+    --clr-neutral-700: hsl(14, 65%, 9%);
+
+    --ff-main: "Red Hat Text", sans-serif;
+
+    --fs-400: 0.875rem;
+    --fs-500: 1rem;
+
+    --fw-regular: 400;
+    --fw-semi-bold: 500;
+    --fw-bold: 700;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+    border: none;
+    font: inherit;
+    background: inherit;
+}
