@@ -91,13 +91,33 @@ picture img {
   align-items: center;
 
   padding: .5rem 1rem;
-  margin-top: -1.2rem;
   border-radius: 10rem;
+}
+
+.control-quantity {
+  background-color: var(--clr-primary-red);
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 1rem;
+  border-radius: 10rem;
+}
+
+.control-quantity img {
+  border: solid 1px #ffff;
+  border-radius: 50%;
+  padding: .2rem;
+  aspect-ratio: 1 / 1;
+}
+
+.quantity {
+  margin-inline: 1.75rem;
 }
 
 .btn-container {
   display: flex;
   justify-content: space-evenly;
+  margin-top: -1.2rem;
 }
 
 .plate-description {
@@ -125,7 +145,7 @@ picture img {
   border-radius: .7rem;
 }
 
-.your-cart p:first-of-type {
+.your-cart > p:nth-of-type(1) {
   color: var(--clr-primary-red);
   font-size: var(--fs-700);
   font-weight: var(--fw-bold);
@@ -133,15 +153,54 @@ picture img {
   margin-bottom: 2.5rem;
 }
 
-.your-cart p:last-of-type {
+.your-cart > p:nth-of-type(2) {
   color: var(--clr-neutral-600);
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-semi-bold);
 }
 
-.your-cart img {
+.your-cart .cake-img {
   margin-inline: auto;
   margin-bottom: 1rem;
 }
+
+
+/* ******************* selected plates ***************** */
+
+.plate-selected {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-block: 1rem;
+  border-bottom: solid 1px var(--clr-neutral-400);
+  text-align: left;
+}
+
+.plate-selected p {
+  font-weight: var(--fw-semi-bold);
+  margin-bottom: .5rem;
+}
+
+.plate-selected span:not(:nth-child(1)) {
+  margin-left: .5rem;
+  color: var(--clr-neutral-500);
+}
+
+.plate-selected span:nth-child(1) {
+  color: var(--clr-primary-red);
+  font-weight: var(--fw-bold);
+}
+
+.plate-selected span:nth-child(3) {
+  font-weight: var(--fw-bold);
+}
+
+.plate-selected img {
+  border: solid 2px var(--clr-neutral-400);
+  padding: .2rem;
+  border-radius: 50%;
+}
+
 
 
 @media (min-width: 950px) {
@@ -157,6 +216,10 @@ picture img {
 
 /* ********** confirmation message *********** */
 
+
+.confirmation {
+  display: none;
+}
 
 .confirmation h1 {
   margin-bottom: .5rem;
@@ -182,37 +245,38 @@ h1 + p {
   margin-bottom: 2rem;
 }
 
-li {
-  display: flex;
+.confirmation li {
+  display: none;
   justify-content: space-between;
   align-items: center;
 
   padding: 1.5rem;
+  border-bottom: solid 1px var(--clr-neutral-400);
 }
 
-li img {
+.confirmation li img {
   width: 3rem;
   border-radius: .3rem;
 }
 
-li > div {
+.confirmation li > div {
   display: flex;
   gap: 1rem;
 }
 
-li > div > div {
+.confirmation li > div > div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-span:first-of-type {
+.confirmation span:first-of-type {
   color: var(--clr-primary-red);
   font-weight: var(--fw-bold);
   margin-right: 1rem;
 }
 
-span:last-of-type {
+.confirmation span:last-of-type {
   color: var(--clr-neutral-500);
 }
 

@@ -17,7 +17,7 @@
 </head>
 <body>
 
-  <div class="container" style="display: none;">
+  <div class="container">
     <div class="menu">
       <h1>Desserts</h1>
       <div class="cards-container">
@@ -32,6 +32,12 @@
               <img src="assets/images/icon-add-to-cart.svg" alt="">
               Add to Cart
             </button>
+
+            <div class="control-quantity">
+              <img src="assets/images/icon-decrement-quantity.svg" alt="">
+              <p class="quantity">1</p>
+              <img src="assets/images/icon-increment-quantity.svg" alt="">
+            </div>
           </div>
           <p class="plate-description">Waffle</p>
           <p class="plate-name">Waffle with Berries</p>
@@ -48,6 +54,12 @@
               <img src="assets/images/icon-add-to-cart.svg" alt="">
               Add to Cart
             </button>
+
+            <div class="control-quantity">
+              <img src="assets/images/icon-decrement-quantity.svg" alt="">
+              <p class="quantity">1</p>
+              <img src="assets/images/icon-increment-quantity.svg" alt="">
+            </div>
           </div>
           <p class="plate-description">Crème Brûlée</p>
           <p class="plate-name">Vanilla Bean Crème Brûlée</p>
@@ -64,6 +76,12 @@
               <img src="assets/images/icon-add-to-cart.svg" alt="">
               Add to Cart
             </button>
+
+            <div class="control-quantity">
+              <img src="assets/images/icon-decrement-quantity.svg" alt="">
+              <p class="quantity">1</p>
+              <img src="assets/images/icon-increment-quantity.svg" alt="">
+            </div>
           </div>
           <p class="plate-description">Macaron</p>
           <p class="plate-name">Macaron Mix of Five</p>
@@ -80,6 +98,12 @@
               <img src="assets/images/icon-add-to-cart.svg" alt="">
               Add to Cart
             </button>
+
+            <div class="control-quantity">
+              <img src="assets/images/icon-decrement-quantity.svg" alt="">
+              <p class="quantity">1</p>
+              <img src="assets/images/icon-increment-quantity.svg" alt="">
+            </div>
           </div>
           <p class="plate-description">Tiramisu</p>
           <p class="plate-name">Classic Tiramisu</p>
@@ -96,6 +120,12 @@
               <img src="assets/images/icon-add-to-cart.svg" alt="">
               Add to Cart
             </button>
+
+            <div class="control-quantity">
+              <img src="assets/images/icon-decrement-quantity.svg" alt="">
+              <p class="quantity">1</p>
+              <img src="assets/images/icon-increment-quantity.svg" alt="">
+            </div>
           </div>
           <p class="plate-description">Baklava</p>
           <p class="plate-name">Pistachio Baklava</p>
@@ -112,6 +142,12 @@
               <img src="assets/images/icon-add-to-cart.svg" alt="">
               Add to Cart
             </button>
+
+            <div class="control-quantity">
+              <img src="assets/images/icon-decrement-quantity.svg" alt="">
+              <p class="quantity">1</p>
+              <img src="assets/images/icon-increment-quantity.svg" alt="">
+            </div>
           </div>
           <p class="plate-description">Pie</p>
           <p class="plate-name">Lemon Meringue Pie</p>
@@ -128,6 +164,12 @@
               <img src="assets/images/icon-add-to-cart.svg" alt="">
               Add to Cart
             </button>
+
+            <div class="control-quantity">
+              <img src="assets/images/icon-decrement-quantity.svg" alt="">
+              <p class="quantity">1</p>
+              <img src="assets/images/icon-increment-quantity.svg" alt="">
+            </div>
           </div>
           <p class="plate-description">Cake</p>
           <p class="plate-name">Red Velvet Cake</p>
@@ -144,6 +186,12 @@
               <img src="assets/images/icon-add-to-cart.svg" alt="">
               Add to Cart
             </button>
+
+            <div class="control-quantity">
+              <img src="assets/images/icon-decrement-quantity.svg" alt="">
+              <p class="quantity">1</p>
+              <img src="assets/images/icon-increment-quantity.svg" alt="">
+            </div>
           </div>
           <p class="plate-description">Brownie</p>
           <p class="plate-name">Salted Caramel Brownie</p>
@@ -160,6 +208,11 @@
               <img src="assets/images/icon-add-to-cart.svg" alt="">
               Add to Cart
             </button>
+            <div class="control-quantity">
+              <img src="assets/images/icon-decrement-quantity.svg" alt="">
+              <p class="quantity">1</p>
+              <img src="assets/images/icon-increment-quantity.svg" alt="">
+            </div>
           </div>
           <p class="plate-description">Panna Cotta</p>
           <p class="plate-name">Vanilla Panna Cotta</p>
@@ -167,12 +220,127 @@
         </div>
       </div>
     </div>
+
+
     <div class="your-cart">
-      <p>Your Cart (<span class="quantity">0</span>)</p>
-      <img src="assets/images/illustration-empty-cart.svg" alt="">
+      <p>Your Cart (<span class="total-quantity">0</span>)</p>
+      <img class="cake-img" src="assets/images/illustration-empty-cart.svg" alt="">
       <p>Your added items will appear here</p>
+
+      <!-- ********* cart added plates ******** -->
+
+      <ul class="selected-plates">
+        <li class="plate-selected">
+          <div>
+            <p>Waffle With Berries</p>
+            <div>
+              <span>1x</span>
+              <span>@ $6.50</span>
+              <span>$6.50</span>
+            </div>
+          </div>
+          <img src="assets/images/icon-remove-item.svg" alt="">
+        </li>
+
+        <li class="plate-selected">
+          <div>
+            <p>Vanilla Bean Crème Brûlée</p>
+            <div>
+              <span>1x</span>
+              <span>@ $7.00</span>
+              <span>$7.00</span>
+            </div>
+          </div>
+          <img src="assets/images/icon-remove-item.svg" alt="">
+        </li>
+
+        <li class="plate-selected">
+          <div>
+            <p>Macaron Mix of Five</p>
+            <div>
+              <span>1x</span>
+              <span>@ $8.00</span>
+              <span>$8.00</span>
+            </div>
+          </div>
+          <img src="assets/images/icon-remove-item.svg" alt="">
+        </li>
+
+        <li class="plate-selected">
+          <div>
+            <p>Classic Tiramisu</p>
+            <div>
+              <span>1x</span>
+              <span>@ $5.50</span>
+              <span>$5.50</span>
+            </div>
+          </div>
+          <img src="assets/images/icon-remove-item.svg" alt="">
+        </li>
+
+        <li class="plate-selected">
+          <div>
+            <p>Pistachio Baklava</p>
+            <div>
+              <span>1x</span>
+              <span>@ $4.00</span>
+              <span>$4.00</span>
+            </div>
+          </div>
+          <img src="assets/images/icon-remove-item.svg" alt="">
+        </li>
+
+        <li class="plate-selected">
+          <div>
+            <p>Lemon Meringue Pie</p>
+            <div>
+              <span>1x</span>
+              <span>@ $5.00</span>
+              <span>$5.00</span>
+            </div>
+          </div>
+          <img src="assets/images/icon-remove-item.svg" alt="">
+        </li>
+
+        <li class="plate-selected">
+          <div>
+            <p>Red Velvet Cake</p>
+            <div>
+              <span>1x</span>
+              <span>@ $4.50</span>
+              <span>$4.50</span>
+            </div>
+          </div>
+          <img src="assets/images/icon-remove-item.svg" alt="">
+        </li>
+
+        <li class="plate-selected">
+          <div>
+            <p>Salted Caramel Brownie</p>
+            <div>
+              <span>1x</span>
+              <span>@ $5.50</span>
+              <span>$5.50</span>
+            </div>
+          </div>
+          <img src="assets/images/icon-remove-item.svg" alt="">
+        </li>
+
+        <li class="plate-selected">
+          <div>
+            <p>Vanilla Panna Cotta</p>
+            <div>
+              <span>1x</span>
+              <span>@ $6.50</span>
+              <span>$6.50</span>
+            </div>
+          </div>
+          <img src="assets/images/icon-remove-item.svg" alt="">
+        </li>
+
+      </ul>
     </div>
-  </div> 
+  </div>
 
 
   <!-- ********* Order confirmation message ******** -->
