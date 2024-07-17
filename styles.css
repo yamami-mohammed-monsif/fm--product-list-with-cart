@@ -153,3 +153,80 @@ picture img {
     align-items: first baseline;
   }
 }
+
+
+/* ********** confirmation message *********** */
+
+
+.confirmation h1 {
+  margin-bottom: .5rem;
+}
+
+h1 + p {
+  color: var(--clr-neutral-500);
+}
+
+.bill {
+  background-color: var(--clr-neutral-300);
+  border-radius: .7rem;
+  margin-block: 1.5rem;
+}
+
+.wrapper {
+  width: min(90%);
+  margin-inline: auto;
+  padding-block: 2rem;
+}
+
+.confirmation-img {
+  margin-bottom: 2rem;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1.5rem;
+}
+
+li img {
+  width: 3rem;
+  border-radius: .3rem;
+}
+
+li > div {
+  display: flex;
+  gap: 1rem;
+}
+
+li > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+span:first-of-type {
+  color: var(--clr-primary-red);
+  font-weight: var(--fw-bold);
+  margin-right: 1rem;
+}
+
+span:last-of-type {
+  color: var(--clr-neutral-500);
+}
+
+.total-price {
+  font-size: var(--fs-700);
+  font-weight: var(--fw-bold);
+  color: var(--clr-neutral-700);
+}
+
+.start-new-order {
+  width: 100%;
+  background-color: var(--clr-primary-red);
+  color: #ffff;
+  letter-spacing: 1px;
+  padding-block: .8rem;
+  border-radius: 10rem;
+}
