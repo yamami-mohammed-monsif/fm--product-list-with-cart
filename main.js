@@ -21,8 +21,9 @@ const orderedPlates2 = document.querySelectorAll('.ordered-plates2');
 const totalPlatePrice2 = document.querySelectorAll('.total-plate-price2');
 const totalChec2 = document.querySelector('.total-price2');
 const desserts = document.querySelectorAll('.card');
+const counter = document.querySelector('.count');
 
-var count = 0;
+var count = parseInt(counter.innerHTML);
 var sum = 0;
 
 addToCartBtns.forEach((btn, index) => {
@@ -37,8 +38,9 @@ addToCartBtns.forEach((btn, index) => {
         orderTotal.style.display = 'flex';
         carbonNeutral.style.display = 'flex';
         confirmOrderBtn.style.display = 'block';
-        plateBill[index].style.display = 'flex'; 
+        plateBill[index].style.display = 'flex';
         count++;
+        counter.innerHTML = count;
 
         var price = parseFloat(totalPlatePrice[index].innerHTML.replace('$', ''));
         sum += price;
@@ -100,8 +102,9 @@ minusBtn.forEach((btn, index) => {
             selectedPlates[index].style.display = 'none';
             orderTotal.style.display = 'none';
             carbonNeutral.style.display = 'none';
-        confirmOrderBtn.style.display = 'none';
+            confirmOrderBtn.style.display = 'none';
             count--;
+            counter.innerHTML = count;
         }
         if(count === 0) {
             removed.style.display = 'block';
@@ -122,6 +125,7 @@ removeBtn.forEach((btn, index) => {
         carbonNeutral.style.display = 'none';
         confirmOrderBtn.style.display = 'none';
         count--;
+        counter.innerHTML = count;
 
         if(count === 0) {
             removed.style.display = 'block';
