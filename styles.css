@@ -279,7 +279,7 @@ picture {
 .overlay {
   position: absolute;
   inset: 0 0;
-  background-color: hsla(0, 2%, 12%, 0.3);
+  background-color: hsla(0, 2%, 12%, 0.5);
   display: none;
 }
 
@@ -302,9 +302,11 @@ picture {
 
 @media (min-width: 500px) {
   .confirmation {
-    max-height: 500px;
+    max-height: 600px;
     overflow-y: auto;
     margin-inline: auto;
+
+    top: 15%;
   }
 }
 
