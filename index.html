@@ -34,9 +34,9 @@
             </button>
 
             <div class="control-quantity">
-              <img src="assets/images/icon-decrement-quantity.svg" alt="">
-              <p class="quantity">1</p>
-              <img src="assets/images/icon-increment-quantity.svg" alt="">
+              <img class="minus-btn" src="assets/images/icon-decrement-quantity.svg" alt="">
+              <p class="quantity"></p>
+              <img class="plus-btn" src="assets/images/icon-increment-quantity.svg" alt="">
             </div>
           </div>
           <p class="plate-description">Waffle</p>
@@ -56,9 +56,9 @@
             </button>
 
             <div class="control-quantity">
-              <img src="assets/images/icon-decrement-quantity.svg" alt="">
-              <p class="quantity">1</p>
-              <img src="assets/images/icon-increment-quantity.svg" alt="">
+              <img class="minus-btn" src="assets/images/icon-decrement-quantity.svg" alt="">
+              <p class="quantity"></p>
+              <img class="plus-btn" src="assets/images/icon-increment-quantity.svg" alt="">
             </div>
           </div>
           <p class="plate-description">Crème Brûlée</p>
@@ -78,9 +78,9 @@
             </button>
 
             <div class="control-quantity">
-              <img src="assets/images/icon-decrement-quantity.svg" alt="">
-              <p class="quantity">1</p>
-              <img src="assets/images/icon-increment-quantity.svg" alt="">
+              <img class="minus-btn" src="assets/images/icon-decrement-quantity.svg" alt="">
+              <p class="quantity"></p>
+              <img class="plus-btn" src="assets/images/icon-increment-quantity.svg" alt="">
             </div>
           </div>
           <p class="plate-description">Macaron</p>
@@ -100,9 +100,9 @@
             </button>
 
             <div class="control-quantity">
-              <img src="assets/images/icon-decrement-quantity.svg" alt="">
-              <p class="quantity">1</p>
-              <img src="assets/images/icon-increment-quantity.svg" alt="">
+              <img class="minus-btn" src="assets/images/icon-decrement-quantity.svg" alt="">
+              <p class="quantity"></p>
+              <img class="plus-btn" src="assets/images/icon-increment-quantity.svg" alt="">
             </div>
           </div>
           <p class="plate-description">Tiramisu</p>
@@ -122,9 +122,9 @@
             </button>
 
             <div class="control-quantity">
-              <img src="assets/images/icon-decrement-quantity.svg" alt="">
-              <p class="quantity">1</p>
-              <img src="assets/images/icon-increment-quantity.svg" alt="">
+              <img class="minus-btn" src="assets/images/icon-decrement-quantity.svg" alt="">
+              <p class="quantity"></p>
+              <img class="plus-btn" src="assets/images/icon-increment-quantity.svg" alt="">
             </div>
           </div>
           <p class="plate-description">Baklava</p>
@@ -144,9 +144,9 @@
             </button>
 
             <div class="control-quantity">
-              <img src="assets/images/icon-decrement-quantity.svg" alt="">
-              <p class="quantity">1</p>
-              <img src="assets/images/icon-increment-quantity.svg" alt="">
+              <img class="minus-btn" src="assets/images/icon-decrement-quantity.svg" alt="">
+              <p class="quantity"></p>
+              <img class="plus-btn" src="assets/images/icon-increment-quantity.svg" alt="">
             </div>
           </div>
           <p class="plate-description">Pie</p>
@@ -166,9 +166,9 @@
             </button>
 
             <div class="control-quantity">
-              <img src="assets/images/icon-decrement-quantity.svg" alt="">
-              <p class="quantity">1</p>
-              <img src="assets/images/icon-increment-quantity.svg" alt="">
+              <img class="minus-btn" src="assets/images/icon-decrement-quantity.svg" alt="">
+              <p class="quantity"></p>
+              <img class="plus-btn" src="assets/images/icon-increment-quantity.svg" alt="">
             </div>
           </div>
           <p class="plate-description">Cake</p>
@@ -188,9 +188,9 @@
             </button>
 
             <div class="control-quantity">
-              <img src="assets/images/icon-decrement-quantity.svg" alt="">
-              <p class="quantity">1</p>
-              <img src="assets/images/icon-increment-quantity.svg" alt="">
+              <img class="minus-btn" src="assets/images/icon-decrement-quantity.svg" alt="">
+              <p class="quantity"></p>
+              <img class="plus-btn" src="assets/images/icon-increment-quantity.svg" alt="">
             </div>
           </div>
           <p class="plate-description">Brownie</p>
@@ -202,16 +202,17 @@
             <source srcset="assets/images/image-panna-cotta-desktop.jpg" media="(min-width: 950px)">
             <source srcset="assets/images/image-panna-cotta-tablet.jpg" media="(min-width: 768px)">
             <img src="assets/images/image-panna-cotta-mobile.jpg" alt="">
-          </picture class="add-to-cart-btn">
+          </picture>
           <div class="btn-container">
             <button class="add-to-cart-btn">
               <img src="assets/images/icon-add-to-cart.svg" alt="">
               Add to Cart
             </button>
+
             <div class="control-quantity">
-              <img src="assets/images/icon-decrement-quantity.svg" alt="">
-              <p class="quantity">1</p>
-              <img src="assets/images/icon-increment-quantity.svg" alt="">
+              <img class="minus-btn" src="assets/images/icon-decrement-quantity.svg" alt="">
+              <p class="quantity"></p>
+              <img class="plus-btn" src="assets/images/icon-increment-quantity.svg" alt="">
             </div>
           </div>
           <p class="plate-description">Panna Cotta</p>
@@ -224,8 +225,12 @@
 
     <div class="your-cart">
       <p>Your Cart (<span class="total-quantity">0</span>)</p>
-      <img class="cake-img" src="assets/images/illustration-empty-cart.svg" alt="">
-      <p>Your added items will appear here</p>
+      <div class="removed">
+        <img class="cake-img" src="assets/images/illustration-empty-cart.svg" alt="">
+        <p>Your added items will appear here</p>
+      </div>
+
+
 
       <!-- ********* cart added plates ******** -->
 
@@ -234,111 +239,123 @@
           <div>
             <p>Waffle With Berries</p>
             <div>
-              <span>1x</span>
+              <span class="ordered-plates">1x</span>
               <span>@ $6.50</span>
-              <span>$6.50</span>
+              <span class="total-plate-price">$6.50</span>
             </div>
           </div>
-          <img src="assets/images/icon-remove-item.svg" alt="">
+          <img class="remove" src="assets/images/icon-remove-item.svg" alt="">
         </li>
 
         <li class="plate-selected">
           <div>
             <p>Vanilla Bean Crème Brûlée</p>
             <div>
-              <span>1x</span>
+              <span class="ordered-plates">1x</span>
               <span>@ $7.00</span>
-              <span>$7.00</span>
+              <span class="total-plate-price">$7.00</span>
             </div>
           </div>
-          <img src="assets/images/icon-remove-item.svg" alt="">
+          <img class="remove" src="assets/images/icon-remove-item.svg" alt="">
         </li>
 
         <li class="plate-selected">
           <div>
             <p>Macaron Mix of Five</p>
             <div>
-              <span>1x</span>
+              <span class="ordered-plates">1x</span>
               <span>@ $8.00</span>
-              <span>$8.00</span>
+              <span class="total-plate-price">$8.00</span>
             </div>
           </div>
-          <img src="assets/images/icon-remove-item.svg" alt="">
+          <img class="remove" src="assets/images/icon-remove-item.svg" alt="">
         </li>
 
         <li class="plate-selected">
           <div>
             <p>Classic Tiramisu</p>
             <div>
-              <span>1x</span>
+              <span class="ordered-plates">1x</span>
               <span>@ $5.50</span>
-              <span>$5.50</span>
+              <span class="total-plate-price">$5.50</span>
             </div>
           </div>
-          <img src="assets/images/icon-remove-item.svg" alt="">
+          <img class="remove" src="assets/images/icon-remove-item.svg" alt="">
         </li>
 
         <li class="plate-selected">
           <div>
             <p>Pistachio Baklava</p>
             <div>
-              <span>1x</span>
+              <span class="ordered-plates">1x</span>
               <span>@ $4.00</span>
-              <span>$4.00</span>
+              <span class="total-plate-price">$4.00</span>
             </div>
           </div>
-          <img src="assets/images/icon-remove-item.svg" alt="">
+          <img class="remove" src="assets/images/icon-remove-item.svg" alt="">
         </li>
 
         <li class="plate-selected">
           <div>
             <p>Lemon Meringue Pie</p>
             <div>
-              <span>1x</span>
+              <span class="ordered-plates">1x</span>
               <span>@ $5.00</span>
-              <span>$5.00</span>
+              <span class="total-plate-price">$5.00</span>
             </div>
           </div>
-          <img src="assets/images/icon-remove-item.svg" alt="">
+          <img class="remove" src="assets/images/icon-remove-item.svg" alt="">
         </li>
 
         <li class="plate-selected">
           <div>
             <p>Red Velvet Cake</p>
             <div>
-              <span>1x</span>
+              <span class="ordered-plates">1x</span>
               <span>@ $4.50</span>
-              <span>$4.50</span>
+              <span class="total-plate-price">$4.50</span>
             </div>
           </div>
-          <img src="assets/images/icon-remove-item.svg" alt="">
+          <img class="remove" src="assets/images/icon-remove-item.svg" alt="">
         </li>
 
         <li class="plate-selected">
           <div>
             <p>Salted Caramel Brownie</p>
             <div>
-              <span>1x</span>
+              <span class="ordered-plates">1x</span>
               <span>@ $5.50</span>
-              <span>$5.50</span>
+              <span class="total-plate-price">$5.50</span>
             </div>
           </div>
-          <img src="assets/images/icon-remove-item.svg" alt="">
+          <img class="remove" src="assets/images/icon-remove-item.svg" alt="">
         </li>
 
         <li class="plate-selected">
           <div>
             <p>Vanilla Panna Cotta</p>
             <div>
-              <span>1x</span>
+              <span class="ordered-plates">1x</span>
               <span>@ $6.50</span>
-              <span>$6.50</span>
+              <span class="total-plate-price">$6.50</span>
             </div>
           </div>
-          <img src="assets/images/icon-remove-item.svg" alt="">
+          <img class="remove" src="assets/images/icon-remove-item.svg" alt="">
+        </li>
+
+        <li class="order-total">
+          <p>Order Total</p>
+          <p class="total-price"></p>
         </li>
 
       </ul>
+
+      <div class="carbon-neutral">
+        <img src="assets/images/icon-carbon-neutral.svg" alt="">
+        <p>This is a <span>carbon-neutral</span> delivery</p>
+      </div>
+
+      <button class="confirm-order">Confirm Order</button>
     </div>
   </div>
 
@@ -353,135 +370,135 @@
 
       <ul class="bill">
 
-        <li>
+        <li class="plate-bill">
           <div>
             <img src="assets/images/image-waffle-thumbnail.jpg" alt="">
             <div>
               <p>Waffle With Berries</p>
               <div>
-                <span>1x</span>
+                <span class="ordered-plates2">1x</span>
                 <span>@ $6.50</span>
               </div>
             </div>
           </div>
-          <p>$6.50</p>
+          <p class="total-plate-price2">$6.50</p>
         </li>
 
-        <li>
+        <li class="plate-bill">
           <div>
             <img src="assets/images/image-creme-brulee-thumbnail.jpg" alt="">
             <div>
               <p>Vanilla Bean Crème Brûlée</p>
               <div>
-                <span>1x</span>
+                <span class="ordered-plates2">1x</span>
                 <span>@ $7.00</span>
               </div>
             </div>
           </div>
-          <p>$7.00</p>
+          <p class="total-plate-price2">$7.00</p>
         </li>
 
-        <li>
+        <li class="plate-bill">
           <div>
             <img src="assets/images/image-macaron-thumbnail.jpg" alt="">
             <div>
               <p>Macaron Mix of Five</p>
               <div>
-                <span>1x</span>
+                <span class="ordered-plates2">1x</span>
                 <span>@ $8.00</span>
               </div>
             </div>
           </div>
-          <p>$8.00</p>
+          <p class="total-plate-price2">$8.00</p>
         </li>
 
-        <li>
+        <li class="plate-bill">
           <div>
             <img src="assets/images/image-tiramisu-thumbnail.jpg" alt="">
             <div>
               <p>Classic Tiramisu</p>
               <div>
-                <span>1x</span>
+                <span class="ordered-plates2">1x</span>
                 <span>@ $5.50</span>
               </div>
             </div>
           </div>
-          <p>$5.50</p>
+          <p class="total-plate-price2">$5.50</p>
         </li>
 
-        <li>
+        <li class="plate-bill">
           <div>
             <img src="assets/images/image-baklava-thumbnail.jpg" alt="">
             <div>
               <p>Pistachio Baklava</p>
               <div>
-                <span>1x</span>
+                <span class="ordered-plates2">1x</span>
                 <span>@ $4.00</span>
               </div>
             </div>
           </div>
-          <p>$4.00</p>
+          <p class="total-plate-price2">$4.00</p>
         </li>
 
-        <li>
+        <li class="plate-bill">
           <div>
             <img src="assets/images/image-meringue-thumbnail.jpg" alt="">
             <div>
               <p>Lemon Meringue Pie</p>
               <div>
-                <span>1x</span>
+                <span class="ordered-plates2">1x</span>
                 <span>@ $5.00</span>
               </div>
             </div>
           </div>
-          <p>$5.00</p>
+          <p class="total-plate-price2">$5.00</p>
         </li>
 
-        <li>
+        <li class="plate-bill">
           <div>
             <img src="assets/images/image-cake-thumbnail.jpg" alt="">
             <div>
               <p>Red Velvet Cake</p>
               <div>
-                <span>1x</span>
+                <span class="ordered-plates2">1x</span>
                 <span>@ $4.50</span>
               </div>
             </div>
           </div>
-          <p>$4.50</p>
+          <p class="total-plate-price2">$4.50</p>
         </li>
 
-        <li>
+        <li class="plate-bill">
           <div>
             <img src="assets/images/image-brownie-thumbnail.jpg" alt="">
             <div>
               <p>Salted Caramel Brownie</p>
               <div>
-                <span>1x</span>
+                <span class="ordered-plates2">1x</span>
                 <span>@ $5.50</span>
               </div>
             </div>
           </div>
-          <p>$5.50</p>
+          <p class="total-plate-price2">$5.50</p>
         </li>
 
-        <li>
+        <li class="plate-bill">
           <div>
             <img src="assets/images/image-panna-cotta-thumbnail.jpg" alt="">
             <div>
               <p>Vanilla Panna Cotta</p>
               <div>
-                <span>1x</span>
+                <span class="ordered-plates2">1x</span>
                 <span>@ $6.50</span>
               </div>
             </div>
           </div>
-          <p>$6.50</p>
+          <p class="total-plate-price2">$6.50</p>
         </li>
 
         <li>
           <p>Order Total</p>
-          <p class="total-price">$00.00</p>
+          <p class="total-price2"></p>
         </li>
 
       </ul>
@@ -490,5 +507,8 @@
     </div>
   </div>
 
+  <div class="overlay"></div>
+
+  <script src="main.js"></script>
 </body>
 </html>
